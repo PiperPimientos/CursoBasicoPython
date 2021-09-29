@@ -9,7 +9,7 @@ valor_dolar = 3875
 #necesitamos saber cuantos dolares tenemos, para ello creamos la variable dólares y le asignamos el valor de pesos dividido valor_dolar. 
 dolares = pesos / valor_dolar
 #Si queremos que no salgan mas que dos decimales
-dolares = str(dolares, 2)
+dolares = round(dolares, 2)
 #convertir esos dólares a un texto, porque queremos imprimir en consola el valor de esos dólares pero en texto
 dolares = str(dolares)
 #solo falta el print 
