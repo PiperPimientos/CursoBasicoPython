@@ -47,18 +47,49 @@
 
 
 
-def conversacion(mensaje):
-    print("Hola")
-    print("Como estas")
-    print(mensaje)
-    print("Adios")
+# def conversacion(mensaje):
+#     print("Hola")
+#     print("Como estas")
+#     print(mensaje)
+#     print("Adios")
 
-opcion = int(input("Elige una opcion (1, 2, 3): "))
-if opcion == 1:
-    conversacion("Elegiste la opcion 1")
-elif opcion == 2:
-    conversacion("Elegiste la opcion 2")
-elif opcion == 3:
-    conversacion("Elegiste la opcion 3")
-else:
-    print("Escribe la opcion correcta")
+# opcion = int(input("Elige una opcion (1, 2, 3): "))
+# if opcion == 1:
+#     conversacion("Elegiste la opcion 1")
+# elif opcion == 2:
+#     conversacion("Elegiste la opcion 2")
+# elif opcion == 3:
+#     conversacion("Elegiste la opcion 3")
+# else:
+#     print("Escribe la opcion correcta")
+
+#Comentamos esto para ver el siguiente ejemplo
+
+
+
+
+
+
+#Return en las funciones
+# Vamos a ver un pequeño truco. Cuando uno termina de ejecutar una función, aveces, quiere guardar lo que la función devuelve y ahí entra una nueva palabra en una variable
+# 1.	Vamos a comentar el ultimo código que hicimos 
+# 2.	Vamos a crear una nueva función def suma(), que recibirá como parámetros, números a y b
+# 3.	Dentro de la funcion vamos a colocar
+#    a.	Print(“Se suman dos números”)
+#    b.	Una variable resultado que tendrá asignada la suma a + b
+# 4.	Como podríamos ejecutar esta función? Con suma(1, 4)
+# 5.	Si la ejecutamos nos damos cuenta que esa variable resultado ya no la tengo disponible para hacer la siguiente operación
+# 6.	Para retornar esa variable, debemos incluir dentro de la función, la palabra reservada return resultado que nos traerá de nuevo la variable resultado. Es decir que cuando la función se termine de ejecutar, la variable resultado, va ser regresada. Para verlo de forma grafica, agregamos antes de invocar nuestra función suma el identificador de una variable que se va llamar sumatoria, que tendrá asignado el resultado de la función suma. 
+# 7.	Si ahora imprimimos print(sumatoria) deberíamos ver el resultado como 
+#       Se suman dos números
+#       5 
+
+
+def suma(a, b):
+    print("Se suman dos numeros")
+    resultado = a + b
+    return resultado
+
+sumatoria = suma(1, 4)
+print(sumatoria)
+
